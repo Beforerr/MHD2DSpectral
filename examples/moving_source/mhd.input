@@ -1,0 +1,41 @@
+&genr
+   tmax = 10.0
+   dtout = 0.2
+   dtrms = 0.05
+/
+&numerical
+   cfl = 0.5
+   dealias_option = 1
+/
+/
+&grid
+   nx = 1024
+   ny = 256
+   Lx = 16.0
+   Ly = 4.0
+/
+&field
+   ifield = 0
+   Bx0 = 1.
+   press0 = 0.2
+/
+&pert
+   ipert = 999
+   if_external_force = T
+/
+&phys
+   adiabatic_index = 1.666667
+   if_resis = F
+   resistivity = 1e-4
+   if_visc = F
+   viscosity = 1e-4
+/
+&AEB
+   if_AEB = F
+   radius0 = 30.0
+   Ur0 = 1.167
+/
+&Hall
+   if_Hall = F 
+   ion_inertial_length = 0
+/
